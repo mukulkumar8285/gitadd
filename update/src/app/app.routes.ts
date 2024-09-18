@@ -8,6 +8,7 @@ import { LaborUpdateComponent } from './Labor/labor-update/labor-update.componen
 import { LaborDeleteComponent } from './Labor/labor-delete/labor-delete.component';
 import { LaborReadComponent } from './Labor/labor-read/labor-read.component';
 import { LoginComponent } from './login/login.component';
+import { AdminComponent } from './admin/admin.component';
 
 export const routes: Routes = [
     { path: 'contractors/update/:id', component: UpdateContractorComponent },
@@ -18,6 +19,8 @@ export const routes: Routes = [
     { path: 'labor/update/:id', component: LaborUpdateComponent },
     { path: 'labor/delete/:id', component: LaborDeleteComponent },
     { path: 'labor/read', component: LaborReadComponent },
-    {path: "login" , component: LoginComponent}
+    {path: "login" , component: LoginComponent},
+    {path: "login/admin" , component: AdminComponent}
+
 
 ];

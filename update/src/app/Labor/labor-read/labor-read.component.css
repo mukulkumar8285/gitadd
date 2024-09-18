@@ -17,4 +17,19 @@ table {
     color: red;
     font-weight: bold;
   }
+ 
+.filter-sort-container {
+    margin-bottom: 20px;
+  }
+  
+  .filter-sort-container label {
+    margin-right: 10px;
+  }
+  
+  .filter-sort-container input, .filter-sort-container select {
+    margin-right: 20px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
   

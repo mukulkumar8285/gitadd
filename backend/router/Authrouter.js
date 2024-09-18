@@ -6,7 +6,7 @@ const routerAuth =  express.Router();
 
 
 routerAuth.post("/login" , AuthController.login);
-// routerAuth.post("/re" , AuthController.register);
+routerAuth.post("/login/admin" , AuthController.Admin);
 
 
 module.exports = routerAuth;
