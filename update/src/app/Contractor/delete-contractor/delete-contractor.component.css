@@ -1,0 +1,29 @@
+/* update-contractor.component.css */
+.delete-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .delete-container h2 {
+    color: #dc3545;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .delete-container button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-container button:hover {
+    background-color: #c82333;
+  }
+  

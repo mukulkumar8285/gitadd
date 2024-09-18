@@ -1,0 +1,31 @@
+
+<div class="create-labor-container" [@formSubmitAnimation]>
+    <h2>Create Labor</h2>
+    <form (ngSubmit)="createLabor()" [@formSubmitAnimation]>
+      <label>Name:</label>
+      <input type="text" [(ngModel)]="LaborData.name" name="name" placeholder="Enter name" required />
+  
+      <label>Email:</label>
+      <input type="email" [(ngModel)]="LaborData.email" name="email" placeholder="Enter email" required />
+  
+      <label>Password:</label>
+      <input type="password" [(ngModel)]="LaborData.password" name="password" placeholder="Enter password" required />
+  
+      <label>Phone:</label>
+      <input type="text" [(ngModel)]="LaborData.phone" name="phone" placeholder="Enter phone number" required />
+  
+      <label>Role:</label>
+      <input type="text" [(ngModel)]="LaborData.role" name="role" placeholder="Enter role (e.g., Worker, Manager)" required />
+  
+      <button type="submit">Create Labor</button>
+    </form>
+  
+    <div *ngIf="successMessage" class="success-message" [@fadeAnimation]>
+      {{ successMessage }}
+    </div>
+  
+    <div class="action-buttons">
+      <button (click)="viewLabor()" [@buttonAnimation]>View Labor</button>
+      <button (click)="deleteUser()" [@buttonAnimation]>Delete User</button>
+    </div>
+  </div>

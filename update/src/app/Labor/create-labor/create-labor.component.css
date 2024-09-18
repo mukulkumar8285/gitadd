@@ -1,0 +1,53 @@
+/* create-labor.component.css */
+.create-labor-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  .success-message {
+    margin-top: 15px;
+    color: green;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .action-buttons button {
+    width: 48%;
+    margin-bottom: 0;
+  }

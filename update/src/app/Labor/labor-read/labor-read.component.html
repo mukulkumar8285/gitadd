@@ -1,0 +1,13 @@
+<h2>Labor List</h2>
+<ul>
+  <li *ngFor="let labor of filteredLabors">
+    Name: {{ labor.name }} | Email: {{ labor.email }} | Phone: {{ labor.phone }} | Role: {{ labor.role }}
+    <button (click)="deleteLabor(labor._id)">Delete</button>
+    
+    <button (click)="navigateToUpdate(labor._id)">Update</button>
+  </li>
+</ul>
+
+<div *ngIf="errorMessage">
+  <p>{{ errorMessage }}</p>
+</div>

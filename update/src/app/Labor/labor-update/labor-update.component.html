@@ -1,0 +1,24 @@
+<p>labor-update works!</p>
+
+<h2>Update Contractor</h2>
+<form (ngSubmit)="updateLabor()">
+    <div>
+        <label for="Name">Name:</label>
+        <input type="text" [(ngModel)]="updateData.name" name="name" />
+      </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" [(ngModel)]="updateData.email" name="email"  />
+  </div>
+  <div>
+    <label for="phone">Phone:</label>
+    <input type="phone" [(ngModel)]="updateData.phone" name="phone"/>
+  </div>
+  <div>
+  <label for="role">Role:</label>
+  <input type="role" [(ngModel)]="updateData.role" name="role"/>
+  </div>
+  <button type="submit">Update Contractor</button>
+</form>
+
+

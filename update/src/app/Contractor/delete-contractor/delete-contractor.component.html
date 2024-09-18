@@ -1,0 +1,9 @@
+<div>
+  <h2>Delete Contractor</h2>
+  <button (click)="deleteContractor()">Delete Contractor</button>
+  
+  
+  <div *ngIf="contractorId">
+    <p>Deleting contractor with ID: {{ contractorId }}</p>
+  </div>
+</div>

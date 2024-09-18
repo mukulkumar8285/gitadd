@@ -1,0 +1,13 @@
+
+<div class="create-contractor-container">
+  <h2>Login</h2>
+  <form (submit)="LoginUser()">
+    <label>Email:</label>
+    <input type="email" [(ngModel)]="LoginData.email" name="email" placeholder="Enter email" required />
+
+    <label>Password:</label>
+    <input type="password" [(ngModel)]="LoginData.password" name="password" placeholder="Enter password" required />
+
+    <button type="submit">Login Contractor</button>
+  </form>
+</div>
